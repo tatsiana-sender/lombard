@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ломбард</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+
+    <div id="wrapper" class="l-catalog">
+
+        <!-- header top -->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 p-xs-r-0 col-4">
+                        <div class="logo_box">
+                            <a href="#">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                            <p>салон распродаж</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-2 col-5 col-md-5 p-xs-0 pr-lg-0">
+                        <div class="location_box">
+                            <a href="#">
+                                <img src="svg/location-icon.svg" alt="">
+                                <span>нижний новгород</span>
+                            </a>
+                        </div>
+                        <div class="shares_box">
+                            <a href="#">акции %</a>
+                        </div>
+                        <!-- responsive call_box -->
+                        <div class="call_box res">
+                            <a href="tel:"><img src="svg/phone-icon.svg" alt=""> <span>+7 (831) 277-99-88</span></a>
+                            <a href="tel:"><img src="svg/viber-small-icon.svg" alt=""> <span>+7 (904) 394-90-43 </span></a>
+                        </div>
+                        <!-- responsive call_box end -->
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-3">
+                        <!-- navbar  -->
+                        <nav class="navbar navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" >
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div class="collapse navbar-collapse">
+                              <ul class="navbar-nav">
+                                  <button class="btn close_nav">&times;</button>
+                                <li>
+                                  <a href="#">услуги</a>
+                                </li>
+                                <li>
+                                  <a href="#">о нас</a>
+                                </li>
+                                <li>
+                                  <a href="#">контакты</a>
+                                </li>
+                                <li class="active">
+                                  <a href="#">магазины</a>
+                                </li>
+                                <li>
+                                  <a href="#">доставка и оплата</a>
+                                </li>
+                                <li>
+                                  <a href="#">форум</a>
+                                </li>
+                              </ul>
+                              <div class="location_box res">
+                                    <a href="#">
+                                        <img src="svg/location-icon.svg" alt="">
+                                        <span>нижний новгород</span>
+                                    </a>
+                                </div>
+                                <div class="shares_box res">
+                                    <a href="#">акции %</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-xl-2 col-lg-3">
+                        <div class="call_box">
+                            <a href="tel:"><img src="svg/phone-icon.svg" alt=""> <span>+7 (831) 277-99-88</span></a>
+                            <a href="tel:"><img src="svg/viber-small-icon.svg" alt=""> <span>+7 (904) 394-90-43 </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- overlay  -->
+            <div class="overlay"></div>
+        </header>
+
+        <!-- section header bottom  -->
+        <section class="header_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-2 col-3">
+                        <button class="btn catalog_button">
+                            <img src="svg/catalog-icon.svg" alt="">
+                            Каталог
+                            товаров
+                        </button>
+                    </div>
+                    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 hidden_search_mobile">
+                        <div class="overlay_search"></div>
+                        <div class="form_search">
+                            <form>
+                                <input type="search" placeholder="Поиск товаров...">
+                                <button class="btn submit"><img src="svg/search-icon.svg" alt=""></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-9">
+                        <div class="order_options">
+                            <!-- search button mobile -->
+                            <button class="search_button_mobile"><img src="svg/search-icon.svg" alt=""></button>
+                            <!-- ---  -->
+                            <a href="#" class="order_call">заказать звонок</a>
+                            <a href="#" class="shop_cart">
+                                <img src="svg/shop-cart-icon.svg" alt="">
+                                <span>2</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- catalog  -->
+                        <div class="catalog_overlay"></div>
+                        <div class="catalog_box">
+                            <button class="btn close_catalog_nav">&times;</button>
+                            <div class="container">
+                                <div class="col-lg-12">
+                                    <ul class="catalog_nav">
+                                        <h4>Сегодня в продаже!</h4>
+                                        <li>
+                                            <span class="nav_menu">Смартфони и телефоны</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже!</h5>
+                                                <li><a href="#">Смартфони и телефоны</a></li>
+                                                <li><a href="#">Планшеты и электронные книги</a></li>
+                                                <li><a href="#">Все для авто</a></li>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Фото и Видеотехника</a></li>
+                                                <li><a href="#">Телевизоры / аудио-видео</a></li>
+                                                <li><a href="#">Бытовая техника</a></li>
+                                                <li><a href="#">Личные вещи </a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu">Планшеты и электронные книги</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 2</h5>
+                                                <li><a href="#">Все для авто</a></li>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Фото и Видеотехника</a></li>
+                                                <li><a href="#">Телевизоры / аудио-видео</a></li>
+                                                <li><a href="#">Бытовая техника</a></li>
+                                                <li><a href="#">Личные вещи </a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu">Все для авто</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 3</h5>
+                                                <li><a href="#">Планшеты и электронные книги</a></li>
+                                                <li><a href="#">Все для авто</a></li>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Личные вещи </a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu">Компьютеры / Ноутбуки / Комплектующие</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 4</h5>
+                                                <li><a href="#">Смартфони и телефоны</a></li>
+                                                <li><a href="#">Все для авто</a></li>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Личные вещи </a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu"> Фото и Видеотехника</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 5</h5>
+                                                <li><a href="#">Планшеты и электронные книги</a></li>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Фото и Видеотехника</a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu">Телевизоры / аудио-видео</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 6</h5>
+                                                <li><a href="#">Планшеты и электронные книги</a></li>
+                                                <li><a href="#">Фото и Видеотехника</a></li>
+                                                <li><a href="#">Телевизоры / аудио-видео</a></li>
+                                                <li><a href="#">Бытовая техника</a></li>
+                                                <li><a href="#">Личные вещи </a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu"> Бытовая техника</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 7</h5>
+                                                <li><a href="#">Смартфони и телефоны</a></li>
+                                                <li><a href="#">Планшеты и электронные книги</a></li>
+                                                <li><a href="#">Все для авто</a></li>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Фото и Видеотехника</a></li>
+                                                <li><a href="#">Телевизоры / аудио-видео</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu">Личные вещи</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 8</h5>
+                                                <li><a href="#">Смартфони и телефоны</a></li>
+                                                <li><a href="#">Телевизоры / аудио-видео</a></li>
+                                                <li><a href="#">Бытовая техника</a></li>
+                                                <li><a href="#">Личные вещи </a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu">Игровые приставки</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 9</h5>
+                                                <li><a href="#">Смартфони и телефоны</a></li>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Фото и Видеотехника</a></li>
+                                                <li><a href="#">Личные вещи </a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu">Инструмент и техника для сада</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 10</h5>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Фото и Видеотехника</a></li>
+                                                <li><a href="#">Телевизоры / аудио-видео</a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu">Товары для спорта и отдыха</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 11</h5>
+                                                <li><a href="#">Смартфони и телефоны</a></li>
+                                                <li><a href="#">Планшеты и электронные книги</a></li>
+                                                <li><a href="#">Телевизоры / аудио-видео</a></li>
+                                                <li><a href="#">Бытовая техника</a></li>
+                                                <li><a href="#">Личные вещи </a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                        <span class="nav_menu"> Ювелирные изделия из золота</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 12</h5>
+                                                <li><a href="#">Все для авто</a></li>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Фото и Видеотехника</a></li>
+                                                <li><a href="#">Телевизоры / аудио-видео</a></li>
+                                                <li><a href="#">Бытовая техника</a></li>
+                                                <li><a href="#">Личные вещи </a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu">Аксессуары</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 13</h5>
+                                                <li><a href="#">Смартфони и телефоны</a></li>
+                                                <li><a href="#">Все для авто</a></li>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Фото и Видеотехника</a></li>
+                                                <li><a href="#">Телевизоры / аудио-видео</a></li>
+                                                <li><a href="#">Бытовая техника</a></li>
+                                                <li><a href="#">Личные вещи </a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="nav_menu">Прочее</span>
+                                            <ul>
+                                                <h5>Сегодня в продаже! 14</h5>
+                                                <li><a href="#">Смартфони и телефоны</a></li>
+                                                <li><a href="#">Планшеты и электронные книги</a></li>
+                                                <li><a href="#">Все для авто</a></li>
+                                                <li><a href="#">Компьютеры / Ноутбуки </a></li>
+                                                <li><a href="#">Фото и Видеотехника</a></li>
+                                                <li><a href="#">Телевизоры / аудио-видео</a></li>
+                                                <li><a href="#">Игровые приставки</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- ---  -->
+                </div>
+            </div>
+        </section>
+
+        <!-- breadcrumb  -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="breadcrumb">
+                <div>
+                  <a href="index.html">Главная</a>
+                </div>
+                <div>
+                  Каталог
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section catalog  -->
+        <section class="catalog">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-3 col-lg-12">
+                <div class="sidebar">
+                  <div class="sidebar__title">Сегодня в продаже!</div>
+                  <ul class="sidebar__list">
+                    <li><a href="#">Смартфони и телефоны<span>(456)</span></a></li>
+                    <li><a href="#">Планшеты и электронные книги<span>(989)</span></a></li>
+                    <li><a href="#">Все для авто<span>(567)</span></a></li>
+                    <li><a href="#">Ноутбуки и компьютерная техника<span>(2 789)</span></a></li>
+                    <li><a href="#">Фото и Видеотехника<span>(456)</span></a></li>
+                    <li><a href="#">Телевизоры / аудио-видео<span>(989)</span></a></li>
+                    <li><a href="#">Бытовая техника<span>(567)</span></a></li>
+                    <li><a href="#">Личные вещи<span>(2 789)</span></a>
+                      <ul>
+                        <li><a href="#">Смартфони и телефоны<span>(456)</span></a></li>
+                        <li><a href="#">Планшеты и электронные книги<span>(989)</span></a></li>
+                        <li><a href="#">Все для авто<span>(567)</span></a></li>
+                        <li><a href="#">Ноутбуки и компьютерная техника<span>(2 789)</span></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Игровые приставки<span>(456)</span></a></li>
+                    <li><a href="#">Сад и ремонт<span>(989)</span></a></li>
+                    <li><a href="#">Товары для спорта и отдыха<span>(567)</span></a></li>
+                    <li><a href="#">Ювелирные изделия из золота<span>(2 789)</span></a></li>
+                    <li><a href="#">Аксессуары<span>(456)</span></a></li>
+                    <li><a href="#">Прочее<span>(989)</span></a></li>
+                  </ul>
+                </div>
+                <div class="filter">
+                    <div class="filter__item">
+                        <div class="filter__title">Цена</div>
+                        <div class="flex-column filter__body">
+                            <input type="range" class="filter__range">                          
+                            <div class="d-flex justify-content-between filter__number">
+                                <input type="number" placeholder="20000">
+                                <input type="number" placeholder="523 134 000">
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__title">Подкатегория</div>
+                        <div class="flex-column filter__body">
+                            <input type="checkbox" name="subcategory" id="1">
+                            <label for="1">
+                                Бензоинструмент
+                            </label>
+                            <input type="checkbox" name="subcategory" id="2">
+                            <label for="2">
+                                Измерительный инструмент
+                            </label>
+                            <input type="checkbox" name="subcategory" id="3">
+                            <label for="3">
+                                Прочий инструмент
+                            </label>
+                            <input type="checkbox" name="subcategory" id="4">
+                            <label for="4">
+                                Ручной инструмент
+                            </label>
+                            <input type="checkbox" name="subcategory" id="5">
+                            <label for="5">
+                                Сварочное оборудование
+                            </label>
+                            <input type="checkbox" name="subcategory" id="6">
+                            <label for="6">
+                                Техника для сада
+                            </label>
+                            <input type="checkbox" name="subcategory" id="7">
+                            <label for="7">
+                                Электроинструмент
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__title">Состояние</div>
+                        <div class="flex-column filter__body">
+                            <input type="checkbox" name="state" id="10">
+                            <label for="10">
+                                б/у
+                            </label>
+                            <input type="checkbox" name="state" id="11">
+                            <label for="11">
+                                Новое
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__title">Производитель</div>
+                        <div class="flex-column filter__body">
+                            <input type="checkbox" name="producer" id="20">
+                            <label for="20">
+                                ADA <span>(4)</span>
+                            </label>
+                            <input type="checkbox" name="producer" id="21">
+                            <label for="21">
+                                AEG <span>(8)</span>
+                            </label>
+                            <input type="checkbox" name="producer" id="22">
+                            <label for="22">
+                                Apple <span>(1)</span>
+                            </label>
+                            <input type="checkbox" name="producer" id="23">
+                            <label for="23">
+                                Black+Decker <span>(6)</span>
+                            </label>
+                            <input type="checkbox" name="producer" id="24">
+                            <label for="24">
+                                BLUEWELD <span>(1)</span>
+                            </label>
+                            <input type="checkbox" name="producer" id="25">
+                            <label for="25">
+                                Bort <span>(12)</span>
+                            </label>
+                            <input type="checkbox" name="producer" id="26">
+                            <label for="26">
+                                Bosch <span>(71)</span>
+                            </label>
+                            <input type="checkbox" name="producer" id="27">
+                            <label for="27">
+                                Champion <span>(3)</span>
+                            </label>
+                            <input type="checkbox" name="producer" id="28">
+                            <label for="28">
+                                CMI <span>(3)</span>
+                            </label>
+                            <input type="checkbox" name="producer" id="29">
+                            <label for="29">
+                                Daewoo <span>(2)</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__title">Наличие в магазине</div>
+                        <div class="flex-column filter__body">
+                            <input type="checkbox" name="shops" id="30">
+                            <label for="30">
+                                Южное шоссе, д. 21
+                            </label>
+                            <input type="checkbox" name="shops" id="31">
+                            <label for="31">
+                                пр. Гагарина 113
+                            </label>
+                            <input type="checkbox" name="shops" id="32">
+                            <label for="32">
+                                ул. Козицкого, 4
+                            </label>
+                            <input type="checkbox" name="shops" id="33">
+                            <label for="33">
+                                ул. Горького, 149а
+                            </label>
+                            <input type="checkbox" name="shops" id="34">
+                            <label for="34">
+                                ул. Долгополова, 19
+                            </label>
+                            <input type="checkbox" name="shops" id="35">
+                            <label for="35">
+                                ул. Васенко 3
+                            </label>
+                            <input type="checkbox" name="shops" id="36">
+                            <label for="36">
+                                ул. Верхне-печерская 14
+                            </label>
+                            <input type="checkbox" name="shops" id="37">
+                            <label for="37">
+                                ул. Военных Комиссаров, 1
+                            </label>
+                            <input type="checkbox" name="shops" id="38">
+                            <label for="38">
+                                Южное шоссе, 41
+                            </label>
+                            <input type="checkbox" name="shops" id="39">
+                            <label for="39">
+                                ул. Краснодонцев, 23
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button class="c-button">Принять</button>
+                        <button class="c-button c-button-transparent">Сбросить</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col-xl-9  col-lg-12">
+                <div class="row">
+                  <div class="col-12">
+                    <h1 class="heading-1">Сад и ремонт</h1>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-8 col-7  align-self-center">
+                        <div class="results">
+                            <div><span>Найдено товаров: </span> 794</div>                            
+                            <button id="categories">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1C0 0.447715 0.447715 0 1 0H3C3.55228 0 4 0.447715 4 1V3C4 3.55228 3.55228 4 3 4H1C0.447715 4 0 3.55228 0 3V1Z"/>
+                                    <path d="M0 9C0 8.44772 0.447715 8 1 8H3C3.55228 8 4 8.44772 4 9V11C4 11.5523 3.55228 12 3 12H1C0.447715 12 0 11.5523 0 11V9Z"/>
+                                    <path d="M0 17C0 16.4477 0.447715 16 1 16H3C3.55228 16 4 16.4477 4 17V19C4 19.5523 3.55228 20 3 20H1C0.447715 20 0 19.5523 0 19V17Z"/>
+                                    <path d="M8 1C8 0.447715 8.44772 0 9 0H11C11.5523 0 12 0.447715 12 1V3C12 3.55228 11.5523 4 11 4H9C8.44772 4 8 3.55228 8 3V1Z"/>
+                                    <path d="M8 9C8 8.44772 8.44772 8 9 8H11C11.5523 8 12 8.44772 12 9V11C12 11.5523 11.5523 12 11 12H9C8.44772 12 8 11.5523 8 11V9Z"/>
+                                    <path d="M8 17C8 16.4477 8.44772 16 9 16H11C11.5523 16 12 16.4477 12 17V19C12 19.5523 11.5523 20 11 20H9C8.44772 20 8 19.5523 8 19V17Z"/>
+                                    <path d="M16 1C16 0.447715 16.4477 0 17 0H19C19.5523 0 20 0.447715 20 1V3C20 3.55228 19.5523 4 19 4H17C16.4477 4 16 3.55228 16 3V1Z"/>
+                                    <path d="M16 9C16 8.44772 16.4477 8 17 8H19C19.5523 8 20 8.44772 20 9V11C20 11.5523 19.5523 12 19 12H17C16.4477 12 16 11.5523 16 11V9Z"/>
+                                    <path d="M16 17C16 16.4477 16.4477 16 17 16H19C19.5523 16 20 16.4477 20 17V19C20 19.5523 19.5523 20 19 20H17C16.4477 20 16 19.5523 16 19V17Z"/>
+                                </svg>
+                                <span>Подборки</span>
+                            </button>
+                            <button id="filter">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path></svg>
+                                <span>Фильтр</span>
+                            </button>
+                        </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 sort">
+                      <div class="d-flex justify-content-between">
+                          <div class="align-self-center">
+                            Сортировка:
+                          </div>
+                          <div class="align-self-center">
+                              <select name="sort" id="sort">
+                                  <option value="popular">Самые популярные</option>
+                                  <option value="popular">Самые популярные</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-4 col-5 d-flex justify-content-end layout">
+                      <button id="layout-table" class="active">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1C0 0.447715 0.447715 0 1 0H3C3.55228 0 4 0.447715 4 1V3C4 3.55228 3.55228 4 3 4H1C0.447715 4 0 3.55228 0 3V1Z"/>
+                            <path d="M0 9C0 8.44772 0.447715 8 1 8H3C3.55228 8 4 8.44772 4 9V11C4 11.5523 3.55228 12 3 12H1C0.447715 12 0 11.5523 0 11V9Z"/>
+                            <path d="M0 17C0 16.4477 0.447715 16 1 16H3C3.55228 16 4 16.4477 4 17V19C4 19.5523 3.55228 20 3 20H1C0.447715 20 0 19.5523 0 19V17Z"/>
+                            <path d="M8 1C8 0.447715 8.44772 0 9 0H11C11.5523 0 12 0.447715 12 1V3C12 3.55228 11.5523 4 11 4H9C8.44772 4 8 3.55228 8 3V1Z"/>
+                            <path d="M8 9C8 8.44772 8.44772 8 9 8H11C11.5523 8 12 8.44772 12 9V11C12 11.5523 11.5523 12 11 12H9C8.44772 12 8 11.5523 8 11V9Z"/>
+                            <path d="M8 17C8 16.4477 8.44772 16 9 16H11C11.5523 16 12 16.4477 12 17V19C12 19.5523 11.5523 20 11 20H9C8.44772 20 8 19.5523 8 19V17Z"/>
+                            <path d="M16 1C16 0.447715 16.4477 0 17 0H19C19.5523 0 20 0.447715 20 1V3C20 3.55228 19.5523 4 19 4H17C16.4477 4 16 3.55228 16 3V1Z"/>
+                            <path d="M16 9C16 8.44772 16.4477 8 17 8H19C19.5523 8 20 8.44772 20 9V11C20 11.5523 19.5523 12 19 12H17C16.4477 12 16 11.5523 16 11V9Z"/>
+                            <path d="M16 17C16 16.4477 16.4477 16 17 16H19C19.5523 16 20 16.4477 20 17V19C20 19.5523 19.5523 20 19 20H17C16.4477 20 16 19.5523 16 19V17Z"/>
+                        </svg>
+                      </button>
+                      <button id="layout-list">
+                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1C0 0.447715 0.447715 0 1 0H3C3.55228 0 4 0.447715 4 1V3C4 3.55228 3.55228 4 3 4H1C0.447715 4 0 3.55228 0 3V1Z"/>
+                            <path d="M0 9C0 8.44772 0.447715 8 1 8H3C3.55228 8 4 8.44772 4 9V11C4 11.5523 3.55228 12 3 12H1C0.447715 12 0 11.5523 0 11V9Z"/>
+                            <path d="M0 17C0 16.4477 0.447715 16 1 16H3C3.55228 16 4 16.4477 4 17V19C4 19.5523 3.55228 20 3 20H1C0.447715 20 0 19.5523 0 19V17Z"/>
+                            <path d="M8 1C8 0.447715 8.44772 0 9 0H20.6C21.1523 0 21.6 0.447715 21.6 1V3C21.6 3.55228 21.1523 4 20.6 4H9C8.44771 4 8 3.55228 8 3V1Z"/>
+                            <path d="M8 9C8 8.44772 8.44772 8 9 8H20.6C21.1523 8 21.6 8.44772 21.6 9V11C21.6 11.5523 21.1523 12 20.6 12H9C8.44771 12 8 11.5523 8 11V9Z"/>
+                            <path d="M8 17C8 16.4477 8.44772 16 9 16H20.6C21.1523 16 21.6 16.4477 21.6 17V19C21.6 19.5523 21.1523 20 20.6 20H9C8.44771 20 8 19.5523 8 19V17Z"/>
+                        </svg>
+                      </button>
+                      <button id="layout-row">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1C0 0.447715 0.447715 0 1 0H19C19.5523 0 20 0.447715 20 1V3C20 3.55228 19.5523 4 19 4H1C0.447716 4 0 3.55228 0 3V1Z"/>
+                            <path d="M0 9C0 8.44772 0.447715 8 1 8H19C19.5523 8 20 8.44772 20 9V11C20 11.5523 19.5523 12 19 12H1C0.447716 12 0 11.5523 0 11V9Z"/>
+                            <path d="M0 17C0 16.4477 0.447715 16 1 16H19C19.5523 16 20 16.4477 20 17V19C20 19.5523 19.5523 20 19 20H1C0.447716 20 0 19.5523 0 19V17Z"/>
+                        </svg>
+                      </button>
+                  </div>
+                  <div class="col-12 d-flex flex-wrap justify-content-between products">
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-2.jpg);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <p class="pr_new">новинка</p>
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-3.jpg);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <del>2 490 Р</del>
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-4.jpg);">
+                                <!-- товар дня! -->
+                                <p class="pr_day">товар дня!</p>
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <!-- <p class="pr_stock">-50%</p> -->
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-1.jpg);">
+                                <!-- товар дня! -->
+                                <p class="pr_day">товар дня!</p>
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <!-- <p class="pr_stock">-50%</p> -->
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <del>2 490 Р</del>
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-5.png);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <p class="pr_new">новинка</p>
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                      <div class="product_box">
+                          <div class="product_image" style="background-image: url(img/product-image-6.png);">
+                              <!-- товар дня! -->
+                              <!-- <p class="pr_day">товар дня!</p> -->
+                              <!-- новинка -->
+                              <!-- <p class="pr_new">новинка</p> -->
+                              <!-- -50% -->
+                              <p class="pr_stock">-50%</p>
+                          </div>
+                          <div class="product_info">
+                              <h4>Рубанок электрический
+                                  AYGER AEP 1100</h4>
+                                  <div class="cost_box">
+                                      <del>2 490 Р</del>
+                                      <p>1 350 Р</p>
+                                  </div>
+                                  <div class="option_box">
+                                      <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                      <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                  </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-2.jpg);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <p class="pr_new">новинка</p>
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-3.jpg);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <del>2 490 Р</del>
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-4.jpg);">
+                                <!-- товар дня! -->
+                                <p class="pr_day">товар дня!</p>
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <!-- <p class="pr_stock">-50%</p> -->
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-1.jpg);">
+                                <!-- товар дня! -->
+                                <p class="pr_day">товар дня!</p>
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <!-- <p class="pr_stock">-50%</p> -->
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <del>2 490 Р</del>
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-5.png);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <p class="pr_new">новинка</p>
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                      <div class="product_box">
+                          <div class="product_image" style="background-image: url(img/product-image-6.png);">
+                              <!-- товар дня! -->
+                              <!-- <p class="pr_day">товар дня!</p> -->
+                              <!-- новинка -->
+                              <!-- <p class="pr_new">новинка</p> -->
+                              <!-- -50% -->
+                              <p class="pr_stock">-50%</p>
+                          </div>
+                          <div class="product_info">
+                              <h4>Рубанок электрический
+                                  AYGER AEP 1100</h4>
+                                  <div class="cost_box">
+                                      <del>2 490 Р</del>
+                                      <p>1 350 Р</p>
+                                  </div>
+                                  <div class="option_box">
+                                      <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                      <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                  </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-2.jpg);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <p class="pr_new">новинка</p>
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-3.jpg);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <del>2 490 Р</del>
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-4.jpg);">
+                                <!-- товар дня! -->
+                                <p class="pr_day">товар дня!</p>
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <!-- <p class="pr_stock">-50%</p> -->
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-1.jpg);">
+                                <!-- товар дня! -->
+                                <p class="pr_day">товар дня!</p>
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <!-- <p class="pr_stock">-50%</p> -->
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <del>2 490 Р</del>
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-5.png);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <p class="pr_new">новинка</p>
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                      <div class="product_box">
+                          <div class="product_image" style="background-image: url(img/product-image-6.png);">
+                              <!-- товар дня! -->
+                              <!-- <p class="pr_day">товар дня!</p> -->
+                              <!-- новинка -->
+                              <!-- <p class="pr_new">новинка</p> -->
+                              <!-- -50% -->
+                              <p class="pr_stock">-50%</p>
+                          </div>
+                          <div class="product_info">
+                              <h4>Рубанок электрический
+                                  AYGER AEP 1100</h4>
+                                  <div class="cost_box">
+                                      <del>2 490 Р</del>
+                                      <p>1 350 Р</p>
+                                  </div>
+                                  <div class="option_box">
+                                      <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                      <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                  </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-2.jpg);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <p class="pr_new">новинка</p>
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-3.jpg);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <del>2 490 Р</del>
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-4.jpg);">
+                                <!-- товар дня! -->
+                                <p class="pr_day">товар дня!</p>
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <!-- <p class="pr_stock">-50%</p> -->
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-1.jpg);">
+                                <!-- товар дня! -->
+                                <p class="pr_day">товар дня!</p>
+                                <!-- новинка -->
+                                <!-- <p class="pr_new">новинка</p> -->
+                                <!-- -50% -->
+                                <!-- <p class="pr_stock">-50%</p> -->
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <del>2 490 Р</del>
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                        <div class="product_box">
+                            <div class="product_image" style="background-image: url(img/product-image-5.png);">
+                                <!-- товар дня! -->
+                                <!-- <p class="pr_day">товар дня!</p> -->
+                                <!-- новинка -->
+                                <p class="pr_new">новинка</p>
+                                <!-- -50% -->
+                                <p class="pr_stock">-50%</p>
+                            </div>
+                            <div class="product_info">
+                                <h4>Рубанок электрический
+                                    AYGER AEP 1100</h4>
+                                    <div class="cost_box">
+                                        <p>1 350 Р</p>
+                                    </div>
+                                    <div class="option_box">
+                                        <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                        <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_item">
+                      <div class="product_box">
+                          <div class="product_image" style="background-image: url(img/product-image-6.png);">
+                              <!-- товар дня! -->
+                              <!-- <p class="pr_day">товар дня!</p> -->
+                              <!-- новинка -->
+                              <!-- <p class="pr_new">новинка</p> -->
+                              <!-- -50% -->
+                              <p class="pr_stock">-50%</p>
+                          </div>
+                          <div class="product_info">
+                              <h4>Рубанок электрический
+                                  AYGER AEP 1100</h4>
+                                  <div class="cost_box">
+                                      <del>2 490 Р</del>
+                                      <p>1 350 Р</p>
+                                  </div>
+                                  <div class="option_box">
+                                      <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                      <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                  </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 pagination">
+                      <ul class="d-flex justify-content-center">
+                          <li>
+                              <a href="#" class="prev"></a>
+                            </li>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li class="active"><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">...</a></li>
+                          <li><a href="#">25</a></li>
+                          <li><a href="#" class="next"></a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section relative products  -->
+        <section class="products">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-3"></div>
+              <div class="col-xl-9 col-lg-12">                
+                    <h2 class="heading-2">Вы недавно смотрели</h2>
+                    <div class="pr-res-0 mb-75">
+                      <div class="slick_product-arrow">
+                        <div class="slide_item">
+                            <div class="product_box">
+                                <div class="product_image" style="background-image: url(img/product-image-1.jpg);">
+                                    <!-- товар дня! -->
+                                    <p class="pr_day">товар дня!</p>
+                                    <!-- новинка -->
+                                    <!-- <p class="pr_new">новинка</p> -->
+                                    <!-- -50% -->
+                                    <!-- <p class="pr_stock">-50%</p> -->
+                                </div>
+                                <div class="product_info">
+                                    <h4>Рубанок электрический
+                                        AYGER AEP 1100</h4>
+                                        <div class="cost_box">
+                                            <del>2 490 Р</del>
+                                            <p>1 350 Р</p>
+                                        </div>
+                                        <div class="option_box">
+                                            <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                            <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <div class="product_box">
+                                <div class="product_image" style="background-image: url(img/product-image-2.jpg);">
+                                    <!-- товар дня! -->
+                                    <!-- <p class="pr_day">товар дня!</p> -->
+                                    <!-- новинка -->
+                                    <p class="pr_new">новинка</p>
+                                    <!-- -50% -->
+                                    <p class="pr_stock">-50%</p>
+                                </div>
+                                <div class="product_info">
+                                    <h4>Рубанок электрический
+                                        AYGER AEP 1100</h4>
+                                        <div class="cost_box">
+                                            <del>2 490 Р</del>
+                                            <p>1 350 Р</p>
+                                        </div>
+                                        <div class="option_box">
+                                            <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                            <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <div class="product_box">
+                                <div class="product_image" style="background-image: url(img/product-image-3.jpg);">
+                                    <!-- товар дня! -->
+                                    <!-- <p class="pr_day">товар дня!</p> -->
+                                    <!-- новинка -->
+                                    <!-- <p class="pr_new">новинка</p> -->
+                                    <!-- -50% -->
+                                    <p class="pr_stock">-50%</p>
+                                </div>
+                                <div class="product_info">
+                                    <h4>Рубанок электрический
+                                        AYGER AEP 1100</h4>
+                                        <div class="cost_box">
+                                            <del>2 490 Р</del>
+                                            <p>1 350 Р</p>
+                                        </div>
+                                        <div class="option_box">
+                                            <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                            <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <div class="product_box">
+                                <div class="product_image" style="background-image: url(img/product-image-4.jpg);">
+                                    <!-- товар дня! -->
+                                    <p class="pr_day">товар дня!</p>
+                                    <!-- новинка -->
+                                    <!-- <p class="pr_new">новинка</p> -->
+                                    <!-- -50% -->
+                                    <!-- <p class="pr_stock">-50%</p> -->
+                                </div>
+                                <div class="product_info">
+                                    <h4>Рубанок электрический
+                                        AYGER AEP 1100</h4>
+                                        <div class="cost_box">
+                                            <del>2 490 Р</del>
+                                            <p>1 350 Р</p>
+                                        </div>
+                                        <div class="option_box">
+                                            <a href="#" class="pr_more"><img src="svg/dots.svg" alt=""></a>
+                                            <a href="#" class="pr_cart"><img src="svg/shop-small-cart-icon.svg" alt=""></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h2 class="heading-2">Техника и инструменты для сада б/у</h2>
+                      <p class="text">В современную эпоху стремительного развития техники и науки на рынке ежегодно появляется множество
+                        новинок, затрагивающих каждый аспект нашей жизни. Инструменты и техника становятся более совершенными,
+                        компактными, мощными и многофункциональными. Те, кто постоянно следят за новинками на рынке,
+                        регулярно обновляют инвентарь, свою же прежнюю технику они сдают в такие комиссионные магазины как
+                        «Звонок». Многие инструменты, представленные в нашем каталоге, являются новыми с действующим гарантийным
+                        сроком, что говорит об их качестве.
+                      </p>
+                      <p class="text">Комиссионный магазин «Звонок» работает на рынке более 15 лет. Все это время мы стараемся
+                        поддерживаться репутацию места, где можно приобрести качественный товар, не переживая о том,
+                        что он нерабочий. Мы тщательно проверяем всю технику, прежде, чем она попадет в каталог нашего
+                        интернет-магазина. Также у нас можно сдать инструменты и технику для сада по очень выгодной цене
+                        или произвести ремонт своего оборудования в специализированной центре. Отдельно следует отметить
+                        широкий ассортимент продукции, позволяющий подобрать нужную технику и инструменты практически под
+                        любые задачи. Для удобства поиска нужного инструментария, мы структурировали свой каталог. Теперь
+                        вы можете отфильтровать технику по брендам, категориям, наличию в определенных магазинах нашей сети,
+                        состоянию.
+                      </p>
+                    </div>                
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section question  -->
+        <section class="sc_subscribe_news question">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <h2 class="heading-2">Остались вопросы?</h2>
+                <p class="text">Заполните форму и мы свяжемся с вами в течении 10 минут</p>
+              </div>
+              <div class="col-lg-8">
+                <form class="d-flex flex-wrap question__form" action="index.html" method="post">
+                  <input type="text" class="question__item question__item-name" name="name" placeholder="Ваше имя" required>
+                  <input type="tel" class="question__item question__item-phone" name="phone" placeholder="Ваш телефон" required>
+                  <textarea name="name" class="col-md-12 question__item question__item-text" rows="1" cols="80" placeholder="сообщение"></textarea>
+                  <div class="d-flex">
+                    <div class="d-flex align-items-center question__agree">
+                        <input id="agree" type="checkbox" name="agree" required>
+                        <label class="col-md-12 d-flex justify-content-center" for="agree">согласен на обработку личных данных</label>
+                    </div>
+                    <button class="btn submit" type="submit" name="submit">Отправить
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path d="M14.8281 7.08524C14.828 7.08506 14.8278 7.08486 14.8276 7.08468L11.766 4.03781C11.5366 3.80956 11.1656 3.81041 10.9373 4.0398C10.709 4.26917 10.7099 4.64015 10.9393 4.86843L12.9949 6.91406H0.585938C0.262324 6.91406 0 7.17638 0 7.5C0 7.82361 0.262324 8.08593 0.585938 8.08593H12.9948L10.9393 10.1316C10.7099 10.3598 10.7091 10.7308 10.9373 10.9602C11.1657 11.1896 11.5367 11.1904 11.766 10.9622L14.8276 7.91531C14.8278 7.91513 14.828 7.91493 14.8282 7.91475C15.0577 7.68571 15.0569 7.31352 14.8281 7.08524Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="15" height="15" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- footer  -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- ---  -->
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-3 col-md-4">
+                                <div class="logo_box">
+                                    <a href="#"><img src="img/logo.png" alt=""></a>
+                                    <p>салон распродаж</p>
+                                </div>
+                                <div class="google_play_box">
+                                    <p>Мобильное приложение:</p>
+                                    <a href="#"><img src="img/google-play.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-8">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <ul>
+                                            <li><a href="#">услуги</a></li>
+                                            <li><a href="#">форум</a></li>
+                                            <li><a href="#">Доставка</a></li>
+                                            <li><a href="#">Оплата и возврат</a></li>
+                                            <li><a href="#">Обратная связь</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <ul>
+                                            <li><a href="#">Телефоны</a></li>
+                                            <li><a href="#">Компьютеры</a></li>
+                                            <li><a href="#">Инструмент</a></li>
+                                            <li><a href="#">Игры и приставки</a></li>
+                                            <li><a href="#">Товары для дома</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <ul>
+                                            <li><a href="#">видеотехника</a></li>
+                                            <li><a href="#">Хобби и отдых</a></li>
+                                            <li><a href="#">Личные вещи</a></li>
+                                            <li><a href="#">Аудиотехника</a></li>
+                                            <li><a href="#">ТВ и Видео</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-12">
+                                <div class="contact_info">
+                                    <p><a href="tel:">+7 (831) 277-99-88</a></p>
+                                    <p><a href="tel:">+7 (904) 394-90-43 </a></p>
+                                    <a href="#" class="order_call">заказать звонок</a>
+                                    <a href="mailto:info@zvonoknn.ru" class="email">info@zvonoknn.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ---  -->
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-xl-4 col-12"></div>
+                            <div class="col-xl-8 col-12 t_center pl-xl-0">
+                                <div class="social_box">
+                                    <p><span>Наши соцсети: </span>
+                                        <a href="#"><img src="svg/instagram-icon.svg" alt=""></a>
+                                        <a href="#"><img src="svg/vk-icon.svg" alt=""></a>
+                                    </p>
+                                </div>
+                                <div class="social_box">
+                                    <p><span>Мы на связи: </span>
+                                        <a href="#"><img src="svg/whats-up-icon.svg" alt=""></a>
+                                        <a href="#"><img src="svg/viber-big-icon.svg" alt=""></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ---  -->
+                    <div class="col-12 footer_info">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="f_end">
+                                    <p>Copyright © 2014 - 2021 <br>
+                                        Комиссионный магазин "Звонок"</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="f_end">
+                                    <p><a href="#">
+                                        Политика конфиденциальности
+                                    </a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 text-lg-right">
+                                <div class="f_end">
+                                    <p>Разработка: <span>Web technology</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+     <!-- Прелоадер  -->
+     <div class='spinner' id="preloader">
+        <div class='dot'></div>
+        <div class='dot'></div>
+        <div class='dot'></div>
+        <div class='dot'></div>
+        <div class='dot'></div>
+        <div class='dot'></div>
+        <div class='dot'></div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+         var preloader = document.getElementById("preloader");
+         document.body.removeChild(preloader);
+     });
+    </script>
+</body>
+</html>
